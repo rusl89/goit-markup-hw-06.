@@ -45,12 +45,11 @@
     <!--Hero-->    
     <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <!-- <a href="#" class="button">Заказать услугу</a> -->
-        <button class="button-style">Заказать услугу</button>
+        <button class="button-style" data-modal-open>Заказать услугу</button>
     </section>
 
 <!-- Modal -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="form" autocomplete="off">
                 <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
@@ -93,7 +92,7 @@
                     <button class="modal-button" type="submit">Отправить</button>
                 </div>
              
-                <div class="modal-close">
+                <div class="modal-close" data-modal-close>
                     <svg class="icon" width=11 height=11 >
                     <use href="./images/sprite.svg#cross"></use>
                     </svg>
@@ -404,5 +403,7 @@
         </div>
         <p class="copyright container">2020 | Developed by GoIT Students </p>      
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
